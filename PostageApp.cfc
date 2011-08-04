@@ -127,7 +127,7 @@
 		
 		<!--- recipient_override --->
 		<cfif len(trim(sLocal.recipient_override))>
-			<cfset sLocal.jsonPacket.arguments.template = trim(sLocal.recipient_override) />
+			<cfset sLocal.jsonPacket.arguments.recipient_override = trim(sLocal.recipient_override) />
 		</cfif>
 		
 		<cfreturn serializeJSON(sLocal.jsonPacket) />
